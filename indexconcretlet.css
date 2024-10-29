@@ -1,0 +1,255 @@
+
+
+.wrapper {
+    font-family: "Poiret One", sans-serif;
+    font-size: 14pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.cardDiv {
+    background-color: rgb(245, 245, 245);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 570px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 10px;
+}
+
+.emoji {
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+.cardDiv img {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 150px;
+}
+
+.discoverBtn {
+    padding: 10px 15px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.discoverBtn:hover {
+    color: blue;
+    background-color: white;
+    border: 1px solid blue;
+    transition: ease 0.2s;
+}
+
+.imageContainer  {
+    width: 50%;
+    padding: 3%;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: center;
+     
+    
+}
+.imageContainer img:hover {
+    transition: transform 0.3s ease; 
+    transform: scale(1.1); 
+
+    
+}
+
+
+@media (max-width: 768px) {
+    .cardDiv {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    .emoji {
+        font-size: 2rem;
+    }
+    
+    .discoverBtn {
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cardDiv {
+        padding: 15px;
+    }
+
+    .emoji {
+        font-size: 1.8rem;
+    }
+
+    .discoverBtn {
+        padding: 6px 10px;
+    }
+}
+
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://png.pngtree.com/background/20230427/original/pngtree-businessman-looking-out-over-cityscape-and-skyscraper-with-big-city-windows-picture-image_2497595.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+/* Pour que le contenu reste au-dessus de l'overlay */
+.heroContainer {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+
+.hero h1{
+    color: white;
+    font-size: 40pt;
+    font-weight: 800;
+    line-height: 0.5;
+    text-align: center;
+}
+
+.hero p{
+    font-family: "Poiret One", sans-serif;
+    font-size: 25pt;
+    font-weight: 300;
+    text-align: center;
+}
+
+.hero a{
+    font-family: "lora", sans-serif;
+    font-size: 20pt;
+    text-align: center;
+    background-color: #2C3333;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.hero a:hover{
+    background-color: #A5C9CA;
+    transition: ease 0.2s;
+}
+
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.cardContainer .cardDiv{
+    width: 50%;
+    margin: 0;
+}
+
+.titleContainer {
+    width: 100%;
+    max-width: 1140px;
+}
+
+.cardWagon {
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 15px 10px;
+    text-align: center;
+    
+}
+
+.cardWagon p, .cardWagonBot p{
+
+    font-size: 14.5pt;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-weight: 100;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    line-height: 2;
+
+}
+
+.cardWagon h3, .cardWagonBot h3{
+    font-size: 18pt;
+    font-weight: 500;
+}
+
+.cardWagon img, .cardWagonBot img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+}
+
+.cardWagonBot {
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 15px 10px;
+
+    
+}
+
+.cardWagonBot h3 {
+    font-size: 22pt;
+
+}
+
+
